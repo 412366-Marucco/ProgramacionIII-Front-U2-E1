@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>Portfolio Personal</title>
+    </head>
+    <body class="bg-gray-100 text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md p-6 text-center">
+        <h1 class="text-3xl font-bold mb-2">Ignacio</h1>
+        <p class="text-lg text-gray-600 mb-4">Desarrollador Web</p>
+        <nav>
+            <ul class="flex justify-center gap-6 text-blue-600 font-medium">
+                <li><a href="#sobre-mi" class="hover:underline">Sobre mí</a></li>
+                <li><a href="#proyectos" class="hover:underline">Proyectos</a></li>
+                <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-6 max-w-4xl mx-auto space-y-16">
+
+        <section id="sobre-mi">
+            <h2 class="text-2xl font-semibold mb-4">Sobre mí</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Soy estudiante de programación, actualmente cursando la carrera
+                <strong>Tecnicatura Universitaria en Programación</strong> en la
+                <strong>UTN de Córdoba</strong>. Me interesa el desarrollo web y estoy en
+                constante aprendizaje para mejorar mis habilidades y crecer como
+                desarrollador.
+            </p>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="text-2xl font-semibold mb-6">Proyectos</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/300x180" alt="Proyecto 1" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Proyecto 1</h3>
+                        <p class="text-gray-600">Descripción breve del proyecto 1.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/300x180" alt="Proyecto 2" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Proyecto 2</h3>
+                        <p class="text-gray-600">Descripción breve del proyecto 2.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/300x180" alt="Proyecto 3" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Proyecto 3</h3>
+                        <p class="text-gray-600">Descripción breve del proyecto 3.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="text-2xl font-semibold mb-6">Contacto</h2>
+            <form id="formulario-contacto" class="bg-white shadow-md p-6 rounded-lg space-y-4">
+                <div>
+                    <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required
+                           class="w-full mt-1 p-2 border border-gray-300 rounded">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full mt-1 p-2 border border-gray-300 rounded">
+                </div>
+
+                <div>
+                    <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                              class="w-full mt-1 p-2 border border-gray-300 rounded"></textarea>
+                </div>
+
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                    ENVIAR
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-16">
+        <p class="mb-1">Proyecto realizado por Ignacio como parte de un ejercicio práctico.</p>
+        <p>
+            <a href="https://github.com/IgnacioMarucco" target="_blank" class="text-blue-400 hover:underline">GitHub</a>
+        </p>
+    </footer>
+    <script src="scripts/app.js"></script>
+
+    </body>
+</html>
